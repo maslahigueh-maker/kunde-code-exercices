@@ -109,17 +109,16 @@ def search_similar_resources(
     raise NotImplementedError("Finish search_similar_resources() first.")
 
 
-# ############################################################
+# 
 # ############################################################
 #
-#   DO NOT TOUCH ANYTHING BELOW THIS LINE
+#   DONT TOUCH!!!!! Ask me if u have any questions abt this code
 #
 #   This part pretends to be the user. It lets you type
 #   questions in the terminal, sends each one to YOUR
 #   search_similar_resources() function, and prints what
 #   comes back so you can check if it makes sense.
 #
-# ############################################################
 # ############################################################
 
 
