@@ -3,10 +3,9 @@ from pathlib import Path
 from Part_2_APIS_AI.tavily_search import search_link
 from db.supabase_client import supabase
 from week3.Part_3_Prompt.prompt_test import get_answer
-links = [
+links = ["https://www.clsottawa.ca/", "https://cscvanier.com/", "https://www.legalaid.on.ca/", "https://ociso.org/"]
 #put all your links here
 
-]
 #1
 #^ This is for previewing the results only, we want to PRINT the result of the CRAWLING FUNCTION seach_link
 def preview_link_results(___):
