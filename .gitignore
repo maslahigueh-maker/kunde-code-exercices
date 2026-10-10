@@ -12,7 +12,6 @@ __pycache__/
 .DS_Store
 
 #other weeks folders
-week6/
 week7/
 
 topological.py
@@ -20,3 +19,4 @@ topological.py
 #solutions
 week3/solutions
 week5/solutions
+week6/solutions

@@ -20,6 +20,7 @@ def find_resources(category):
 
 # Augmented (adding to the promp )
 result = find_resources("food")
+
 # What happens if i ask for a category that my res bank doesnt have? 
 result_list = []
 for r in result:
