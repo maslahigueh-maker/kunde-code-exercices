@@ -4,26 +4,31 @@
 # TASK 1 : Variable
 # Create a variable called "question" that stores a question a newcomer
 # would ask our resource finder.
-question = input("Do you have any questions?")
 
+question = input ("Would ask our resource finder?")
 
 # TASK 2 : List
 # Create a list called "needs" with at least two things a person might
 # need to bring with them  (example: health card).
-needs = ["health card", "passport"]
+
+needs = [health card, passport]
+
 
 # TASK 3 : Dictionary
 # Create a dictionary called "resource" for ONE resource.
 # It must include a name, a phone number, and an address.
-resource = {"name": "maslah",
-"phone number": "67",
-"adress": "prom.denhaag"}
+
+Resource :{"name": "Maslah", 
+"phone num": "613-567-1664", 
+"address": "123 slater rd "}
 
 # TASK 4 : List of dictionaries
 # Create a list called "list_of_resources" with at least two dictionaries,
 # each shaped like the one you built in Task 3.
 
-dictio = 
+List_of_clients = [ {"name": "ouassim", "role": "student", "adress": "st-laurent"},
+{"name": ""}]
+
 # TASK 5 : Function
 # Write a function called "final_output" that:
 #   - takes ONE input: a person's name
