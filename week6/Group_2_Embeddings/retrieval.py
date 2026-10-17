@@ -65,6 +65,7 @@ from services.embeddings import get_embedding
 def search_similar_resources(
     question: str, match_count: int = 5, match_threshold: float = 0.1
 ) -> list[dict]:
+
     """
     Take a plain-English question and return the best matching resources.
 
@@ -104,9 +105,28 @@ def search_similar_resources(
       Step 3. The results live inside  response.data 
               Return that.
     """
-    
+     ################# Adam Added this ##################
+
+    # !!! 1 - Question gets embedded using the function with type search query !!!
+    question_emb = get_embedding(question, input_type="search_query")
+
+    # !!! 2 - Calling Supabase and getting the response with query_emb !!!
+    response = supabase.rpc(
+        "match_res",
+        {
+            "query_embedding": question_emb,
+            "match_count": match_count,
+            "match_threshold": match_threshold
+        },
+    ).execute()
+
+    # !!! 3 - Returns the response of AWS after analysing query_embedding !!! 
+    return response.data
+
+    #####################################################
+
     # Delete the next line when you start writing your code:
-    raise NotImplementedError("Finish search_similar_resources() first.")
+    # !! raise NotImplementedError("Finish search_similar_resources() first.")
 
 
 # 

@@ -78,7 +78,13 @@ CONTEXT_QUESTIONS = [
     # Write your dictionnaries here. Put a comma after each one.
     # ^ Remember: a string starts and ends with....
 
+  
+    # ^ Remember: a string starts and ends with....
+
   {
+        "key": "kids",
+        "question": "How many kids (under 18) do you have?",
+        "options": ["0", "1", "2-4", "5+"],
     },
 ]
 
